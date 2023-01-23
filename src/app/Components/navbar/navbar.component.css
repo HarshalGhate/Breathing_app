@@ -21,10 +21,18 @@
       align-items: center;
   }
 
+  .icon-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
 
   mat-icon,.logo{
     color: white;
-    font-size: xx-large;
+    /* font-size: xx-large; */
 }
 
 /* .sticky {
@@ -33,3 +41,15 @@
   top: 0px;
   z-index: 100;
 } */
+
+@media(max-width:468px){
+  small{
+    font-size: .8rem;
+  }
+}
+
+@media(min-width:468px){
+  small{
+    font-size: .85rem;
+  }
+}
