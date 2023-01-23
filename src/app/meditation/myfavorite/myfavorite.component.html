@@ -1,0 +1,25 @@
+<app-meditaion-navbar></app-meditaion-navbar>
+<div class="wrapper">
+
+    <section class="card-section">
+        <mat-card class="example-card" *ngFor="let item of data">
+            <mat-icon aria-hidden="false" class="delete-icon" fontIcon="delete" (click)="removeCard(item)">delete
+            </mat-icon>
+            <!-- <a routerLink="/details/{{item.id}}"> -->
+            <img mat-card-image (click)="onAudioPlay(audioOption)" src="{{item.Image}}" alt="Photo" width="100%">
+            <!-- </a> -->
+            <mat-card-content>
+                <div class="details-description">
+                    <div class="title-section">{{item?.title}}</div>
+                    <div class="title-section">{{item?.author}}</div>
+                </div>
+                <div class="audio-section">
+                    <audio #audioOption  src="{{item?.audio}}"> <!--controls-->
+                        <!-- <source src='{{item?.audio}}' type="audio/mp3"> -->
+                    </audio>
+                </div>
+            </mat-card-content>
+
+        </mat-card>
+    </section>
+</div>

@@ -1,0 +1,55 @@
+.container{
+    text-align: center;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto 0 auto;
+   
+}
+.wrapper{
+    position: relative;
+    /* position: absolute; */
+    /* top: 40px; */
+}
+.date-section{
+    display: flex;
+    justify-content: space-between;
+    color: #fd7e14;
+    
+}
+
+.date{
+    border: 1px solid #fd7e14;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 500;
+    
+}
+.gif-section{
+    text-align: center;
+}
+.gif{
+    width: 200px;
+}
+
+.img-section{
+    display: flex;
+}
+
+.example-card {
+    max-width: 240px;
+    margin: 20px;
+  }
+  
+  
+
+  .card-section{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+ 

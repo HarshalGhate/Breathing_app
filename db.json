@@ -1,0 +1,141 @@
+{
+  "Data": [
+    {
+      "id": 1,
+      "Image": "assets/1.jpeg",
+      "title": "Sun Set",
+      "author": "Dean Amborese",
+      "audio": "assets/Music/1.mp3"
+    },
+    {
+      "id": 2,
+      "Image": "assets/2.jpeg",
+      "title": "Motivation",
+      "author": "Roman Ringes",
+      "audio": "assets/Music/2.mp3"
+    },
+    {
+      "id": 3,
+      "Image": "assets/3.webp",
+      "title": "Nature",
+      "author": "seth Rollins",
+      "audio": "assets/Music/3.mp3"
+    },
+    {
+      "id": 4,
+      "Image": "assets/4.webp",
+      "title": "",
+      "description": "Hello",
+      "audio": "assets/Music/4.mp3"
+    },
+    {
+      "id": 5,
+      "Image": "assets/5.webp",
+      "title": "Hello",
+      "description": "Hello",
+      "audio": ""
+    },
+    {
+      "id": 6,
+      "Image": "assets/6.webp",
+      "title": "Hello",
+      "description": "Hello",
+      "audio": ""
+    }
+  ],
+  "Favorite": [
+    {
+      "id": 6,
+      "Image": "assets/6.webp",
+      "title": "Hello",
+      "description": "Hello",
+      "audio": ""
+    },
+    {
+      "id": 1,
+      "Image": "assets/1.jpeg",
+      "title": "Sun Set",
+      "author": "Dean Amborese",
+      "audio": "assets/Music/1.mp3"
+    }
+  ],
+  "Melodies": [
+    {
+      "id": 1,
+      "title": "Bird",
+      "audio": "assets/melodies_music/birds.mp3"
+    },
+    {
+      "id": 2,
+      "title": "Wind",
+      "audio": "assets/melodies_music/wind.mp3"
+    },
+    {
+      "id": 3,
+      "title": "Rain",
+      "audio": "assets/melodies_music/rain.mp3"
+    },
+    {
+      "id": 4,
+      "title": "Tornado",
+      "audio": "assets/melodies_music/tornado.mp3"
+    },
+    {
+      "id": 5,
+      "title": "Lake",
+      "audio": "assets/melodies_music/lake.mp3"
+    },
+    {
+      "id": 6,
+      "title": "Ocean",
+      "audio": "assets/melodies_music/ocean.mp3"
+    },
+    {
+      "id": 7,
+      "title": "Snow",
+      "audio": "assets/melodies_music/snow.mp3"
+    },
+    {
+      "id": 8,
+      "title": "Hazzard",
+      "audio": "assets/melodies_music/hazzard.mp3"
+    },
+    {
+      "id": 9,
+      "title": "Water Fall",
+      "audio": "assets/melodies_music/water_fall.mp3"
+    },
+    {
+      "id": 10,
+      "title": "Forest",
+      "audio": "assets/melodies_music/Forest.mp3"
+    },
+    {
+      "id": 11,
+      "title": "Night",
+      "audio": "assets/melodies_music/Night.mp3"
+    },
+    {
+      "id": 12,
+      "title": "Sand",
+      "audio": "assets/melodies_music/Sand.mp3"
+    }
+  ],
+  "Mixer": [
+    {
+      "id": 1,
+      "title": "Bird",
+      "audio": "assets/melodies_music/birds.mp3"
+    },
+    {
+      "id": 3,
+      "title": "Rain",
+      "audio": "assets/melodies_music/rain.mp3"
+    },
+    {
+      "id": 5,
+      "title": "Lake",
+      "audio": "assets/melodies_music/lake.mp3"
+    }
+  ]
+}

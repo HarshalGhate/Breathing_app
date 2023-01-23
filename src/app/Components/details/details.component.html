@@ -1,0 +1,25 @@
+<!-- <mat-card class="example-card">
+    <mat-card-content>
+        <img mat-card-image src="{{Data?.Image}}">
+    </mat-card-content>
+</mat-card> -->
+
+<div class="container">
+    <div class="card">
+        <div class="img-section">
+            <img src="{{Data?.Image}}" alt="">
+        </div>
+        <div class="details-section">
+            <div class="details-description">
+                <div class="title-section">{{Data?.title}}</div>
+                <div class="title-section">{{Data?.author}}</div>
+            </div>
+            <div class="audio-section"><audio controls src="{{Data?.audio}}">
+                    <!-- <a href="/media/cc0-audio/t-rex-roar.mp3">
+                        Download audio
+                    </a> -->
+                </audio></div>
+            
+        </div>
+    </div>
+</div>
