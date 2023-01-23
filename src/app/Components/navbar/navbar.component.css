@@ -3,7 +3,9 @@
     justify-content: space-between;
     /* justify-content: space-around; */
   }
-
+.mat-toolbar-row, .mat-toolbar-single-row{
+  padding: 0;
+}
   .nav{
       background-color: #fd7e14;
       /* background-color: #63e6be; */
@@ -13,7 +15,7 @@
 
   .nav-container{
     display: flex;
-      width: 80%;
+      width: 85%;
       margin: auto;
       justify-content: space-between;
       align-items: center;
@@ -22,6 +24,7 @@
 
   mat-icon,.logo{
     color: white;
+    font-size: xx-large;
 }
 
 /* .sticky {

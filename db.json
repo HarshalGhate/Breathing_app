@@ -57,6 +57,13 @@
       "title": "Sun Set",
       "author": "Dean Amborese",
       "audio": "assets/Music/1.mp3"
+    },
+    {
+      "id": 3,
+      "Image": "assets/3.webp",
+      "title": "Nature",
+      "author": "seth Rollins",
+      "audio": "assets/Music/3.mp3"
     }
   ],
   "Melodies": [
