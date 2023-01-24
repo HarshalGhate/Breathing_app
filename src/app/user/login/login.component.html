@@ -1,0 +1,61 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="logo-section">
+            <div class="circle" routerLink="/user/starter">
+                <mat-icon class="arrow-back-icon">arrow_back</mat-icon>
+            </div>
+            <img src="assets/logo/breathly_logo1.png" alt="" >
+        </div>
+        <div class="top-social-section">
+            <div class="header">
+                <h1>Welcome Back</h1>
+            </div>
+            <div class="social-btn">
+                <!-- <button class="social-btn">Continue with Facebook</button> -->
+                <mat-icon>facebook</mat-icon>
+                <a >Continue with Facebook</a>
+            </div>
+            <div class="social-btn">
+                <!-- <button class="social-btn">Continue with Google</button> -->
+                <mat-icon>Google</mat-icon>
+                <a >Continue with Google</a>
+            </div>
+            <h4>OR LOGIN WITH EMAIL</h4>
+        </div>
+
+        <div class="form-section">
+            <form [formGroup]="loginForm">
+               
+                <!-- email -->
+                <div class="input-user">
+                    <mat-form-field appearance="outline">
+                        <!-- [formControl]="email" -->
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="pat@example.com" formControlName="email" required>
+                        <mat-icon matSuffix>done</mat-icon>
+                        <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+                    </mat-form-field>
+                </div>
+                <!-- password -->
+                <div class="input-user">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Enter your password</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" required>
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                            [attr.aria-pressed]="hide">
+                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                </div>
+
+                <div class="input-btn">
+                    <button class="form-btn"  (click)="login(loginForm.value)">LOG IN</button>
+                    <!-- routerLink="/user/welcome" -->
+                </div>
+
+                <h4>Forgot password?</h4>
+                <h4>New User? <a class="sign-up-link" routerLink="/user/signup">SIGN UP</a></h4>
+            </form>
+        </div>
+    </div>
+</div>

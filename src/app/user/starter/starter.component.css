@@ -1,0 +1,60 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #fff4e6; */
+    background-color: #ffe8cc;
+}
+
+.container{
+    max-width: 500px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+h1{
+    font-weight: 700;
+    font-size: 2rem;
+     margin-bottom: 10px;
+}
+h4{
+    color: #868e96;
+}
+
+header{
+}
+
+
+/* btn section */
+.button-section{
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.sign-btn{
+    width: 100%;
+    color: #fff;
+    background-color: #fd7e14;
+    border: none;
+    border-radius: 10px;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+h5{
+    font-size:small;
+    color: #868e96;
+}
+
+a:link,a:visited{
+    color: #fd7e14;
+    text-decoration: none;
+    font-weight: 700;
+}

@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="wrapper">
     <div class="container">
         <h2>{{msg}} {{name}}</h2>
@@ -26,11 +27,11 @@
     <section class="card-section">
         <mat-card class="example-card" *ngFor="let item of data">
 
-            <a routerLink="/details/{{item.id}}"><img mat-card-image src="{{item.Image}}" alt="Photo" width="100%"
+            <a routerLink="/homepage/details/{{item.id}}"><img mat-card-image src="{{item.Image}}" alt="Photo" width="100%"
                     height="90%"></a>
             <mat-card-content>
                 <p>
-                    <a routerLink="/details/{{item.id}}">More Details</a>
+                    <a routerLink="/homepage/details/{{item.id}}">More Details</a>
                 </p>
             </mat-card-content>
 

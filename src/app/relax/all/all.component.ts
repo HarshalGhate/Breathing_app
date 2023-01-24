@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { dataType } from 'src/app/Components/home/data';
+import { dataType } from 'src/app/home/home/data';
 import { ApiService } from 'src/app/Services/api.service';
 
 @Component({

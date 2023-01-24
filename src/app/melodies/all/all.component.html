@@ -2,7 +2,7 @@
 <div class="wrapper">
     <div class="container">
         <div *ngFor="let item of MelodiesData">
-            <div class="circle " (click)="playAudio(audioOption,item)" appShadow>
+            <div class="circle" (click)="playAudio(audioOption,item)" appShadow>
                 {{item.title}}
                 <audio #audioOption src="{{item?.audio}}">
                     <!--controls-->
@@ -22,7 +22,7 @@
                     <mat-panel-title>
                         Mixer
                     </mat-panel-title>
-                    
+
                 </mat-expansion-panel-header>
                 <div *ngIf="MixerData.length>0">
                     <!-- slider -->
@@ -31,7 +31,7 @@
                             Sound {{i+1}}
                         </div>
                         <mat-slider [ngClass]="{'red-slider': true}">
-                            <input matSliderThumb >
+                            <input matSliderThumb>
                         </mat-slider>
                     </div>
                 </div>

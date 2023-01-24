@@ -7,6 +7,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSliderModule } from '@angular/material/slider';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 @NgModule({
   declarations: [],
   imports: [
@@ -22,6 +24,8 @@ import { MatSliderModule } from '@angular/material/slider';
     MatButtonModule,
     MatCardModule,
     MatExpansionModule,
-    MatSliderModule]
+    MatSliderModule,
+    MatFormFieldModule,
+    MatInputModule]
 })
 export class MaterialModule { }
