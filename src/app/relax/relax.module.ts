@@ -8,6 +8,7 @@ import { MyfavouriteComponent } from './myfavourite/myfavourite.component';
 import { BeginnersComponent } from './beginners/beginners.component';
 import { SelfCalmComponent } from './self-calm/self-calm.component';
 import { MaterialModule } from '../material/material.module';
+import { MainNavModule } from '../main-nav/main-nav.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { MaterialModule } from '../material/material.module';
   imports: [
     CommonModule,
     RelaxRoutingModule,
-    MaterialModule
+    MaterialModule,
+    MainNavModule
   ]
 })
 export class RelaxModule { }

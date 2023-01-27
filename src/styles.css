@@ -8,3 +8,16 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.sucess-icon{
+    color: rgb(10, 209, 10);
+}
+.mat-error {
+    color: red;
+    font-size: .8rem;
+}
+
+button{
+    cursor: pointer;
+}

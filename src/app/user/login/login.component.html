@@ -4,7 +4,7 @@
             <div class="circle" routerLink="/user/starter">
                 <mat-icon class="arrow-back-icon">arrow_back</mat-icon>
             </div>
-            <img src="assets/logo/breathly_logo1.png" alt="" >
+            <img src="assets/logo/breathly_logo1.png" alt="">
         </div>
         <div class="top-social-section">
             <div class="header">
@@ -13,27 +13,31 @@
             <div class="social-btn">
                 <!-- <button class="social-btn">Continue with Facebook</button> -->
                 <mat-icon>facebook</mat-icon>
-                <a >Continue with Facebook</a>
+                <a>Continue with Facebook</a>
             </div>
             <div class="social-btn">
                 <!-- <button class="social-btn">Continue with Google</button> -->
                 <mat-icon>Google</mat-icon>
-                <a >Continue with Google</a>
+                <a>Continue with Google</a>
             </div>
             <h4>OR LOGIN WITH EMAIL</h4>
         </div>
 
         <div class="form-section">
             <form [formGroup]="loginForm">
-               
+
                 <!-- email -->
                 <div class="input-user">
                     <mat-form-field appearance="outline">
                         <!-- [formControl]="email" -->
                         <mat-label>Email</mat-label>
                         <input matInput placeholder="pat@example.com" formControlName="email" required>
-                        <mat-icon matSuffix>done</mat-icon>
-                        <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+                        <mat-icon matSuffix *ngIf="!Email.valid">email</mat-icon>
+                        <mat-icon class="sucess-icon" *ngIf="Email.valid" matSuffix>done</mat-icon>
+                        <mat-error *ngIf="Email.invalid && ( Email.touched || Email.dirty)">
+                            <mat-error *ngIf="Email.hasError('required')">Email is required</mat-error>
+                            <mat-error *ngIf="Email.hasError('invalidEmail')">Please enter the valid email</mat-error>
+                        </mat-error>
                     </mat-form-field>
                 </div>
                 <!-- password -->
@@ -45,11 +49,17 @@
                             [attr.aria-pressed]="hide">
                             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                         </button>
+                        <mat-error *ngIf="Pass.invalid && (Pass.touched || Pass.dirty)">
+                            <mat-error *ngIf="Pass.hasError('required')">Password is required</mat-error>
+                            <mat-error *ngIf="Pass.hasError('passwordStrength')">{{Pass.errors?.passwordStrength}}
+                            </mat-error>
+                        </mat-error>
+
                     </mat-form-field>
                 </div>
 
                 <div class="input-btn">
-                    <button class="form-btn"  (click)="login(loginForm.value)">LOG IN</button>
+                    <button class="form-btn" (click)="login(loginForm.value)">LOG IN</button>
                     <!-- routerLink="/user/welcome" -->
                 </div>
 

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 .container{
     max-width: 600px;
@@ -67,15 +67,42 @@ h4{
     display: flex;
     justify-content: center;
 }
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    text-align: center;
+}
 
 .input-user{
     width: 100%;
+}
+
+.sucess-icon{
+    color: rgb(10, 209, 10);
 }
 
 .mat-form-field{
     display: contents ;
 }
 
+.mat-error {
+    color: red;
+    font-size: .8rem;
+}
+
+.login-up-link{
+    color: #fd7e14;
+    text-decoration: none;
+    font-weight: 700;
+}
+
 .form-btn{
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+}
+
+@media(min-width:1000px){
+    .top-social-section{
+        gap: .6rem;
+    }
 }

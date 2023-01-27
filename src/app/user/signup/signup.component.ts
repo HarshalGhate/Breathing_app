@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { EmailValidator, FormBuilder, Validators } from '@angular/forms';
 import { signup } from './signup';
 import { SignUpService } from 'src/app/Services/SignUp/sign-up.service';
+import { EmailValidation, PassValidator } from 'src/app/Valdiation/customValidation';
 
 @Component({
   selector: 'app-signup',
@@ -13,9 +14,9 @@ export class SignupComponent implements OnInit {
   signupForm: any;
   constructor(private fobj: FormBuilder,private api:SignUpService) {
     this.signupForm = fobj.group({
-      userName: [''],
-      email: [''],
-      password: ['']
+      userName: ['',[Validators.required]],
+      email: ['',[Validators.required,EmailValidation.isValid]],
+      password: ['',[Validators.required,PassValidator.isValid]]
     })
   }
 
@@ -23,9 +24,27 @@ export class SignupComponent implements OnInit {
   }
 
   signUp(data: signup) {
-    this.api.post(data).subscribe(res=>{
+    if(this.signupForm.status=='INVALID'){
+      this.signupForm.markAllAsTouched()
+    }
+    else{
+      this.api.post(data).subscribe(res=>{
       
-    })
+      })
+    }
+   
+  }
+
+  get Uname(){
+    return this.signupForm.get('userName')
+  }
+
+  get Email(){
+    return this.signupForm.get('email')
+  }
+
+  get pass(){
+    return this.signupForm.get('password')
   }
 
 }

@@ -9,6 +9,7 @@ import { MusicalComponent } from './musical/musical.component';
 import { CategoryComponent } from './category/category.component';
 import { ShadowDirective } from '../Directives/shadow.directive';
 import { MaterialModule } from '../material/material.module';
+import { MainNavModule } from '../main-nav/main-nav.module';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { MaterialModule } from '../material/material.module';
   imports: [
     CommonModule,
     MelodiesRoutingModule,
-    MaterialModule
+    MaterialModule,
+    MainNavModule
   ]
 })
 export class MelodiesModule { }

@@ -43,29 +43,7 @@
       "audio": ""
     }
   ],
-  "Favorite": [
-    {
-      "id": 6,
-      "Image": "assets/6.webp",
-      "title": "Hello",
-      "description": "Hello",
-      "audio": ""
-    },
-    {
-      "id": 1,
-      "Image": "assets/1.jpeg",
-      "title": "Sun Set",
-      "author": "Dean Amborese",
-      "audio": "assets/Music/1.mp3"
-    },
-    {
-      "id": 3,
-      "Image": "assets/3.webp",
-      "title": "Nature",
-      "author": "seth Rollins",
-      "audio": "assets/Music/3.mp3"
-    }
-  ],
+  "Favorite": [],
   "Melodies": [
     {
       "id": 1,
@@ -130,9 +108,9 @@
   ],
   "Mixer": [
     {
-      "id": 1,
-      "title": "Bird",
-      "audio": "assets/melodies_music/birds.mp3"
+      "id": 7,
+      "title": "Snow",
+      "audio": "assets/melodies_music/snow.mp3"
     },
     {
       "id": 3,
@@ -140,9 +118,418 @@
       "audio": "assets/melodies_music/rain.mp3"
     },
     {
-      "id": 5,
-      "title": "Lake",
-      "audio": "assets/melodies_music/lake.mp3"
+      "id": 4,
+      "title": "Tornado",
+      "audio": "assets/melodies_music/tornado.mp3"
+    },
+    {
+      "id": 1,
+      "title": "Bird",
+      "audio": "assets/melodies_music/birds.mp3"
+    }
+  ],
+  "signup": [
+    {
+      "userName": "sam",
+      "email": "harshal",
+      "password": "jgjgyghjgh",
+      "id": 1
+    },
+    {
+      "userName": "ram",
+      "email": "ram@gmail.com",
+      "password": "jgjgyghjgh",
+      "id": 2
+    },
+    {
+      "userName": "roman",
+      "email": "roman@gmail.com",
+      "password": "3131",
+      "id": 3
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 6
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 7
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 8
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 9
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 10
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 11
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 12
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 13
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 14
+    },
+    {
+      "userName": "",
+      "email": "roman@gmail",
+      "password": "",
+      "id": 15
+    },
+    {
+      "userName": "",
+      "email": "roman@gmail",
+      "password": "",
+      "id": 16
+    },
+    {
+      "userName": "",
+      "email": "roman@gmail",
+      "password": "",
+      "id": 17
+    },
+    {
+      "userName": "",
+      "email": "roman@gmail.com",
+      "password": "",
+      "id": 18
+    },
+    {
+      "userName": "",
+      "email": "roman@gmail.com",
+      "password": "",
+      "id": 19
+    },
+    {
+      "userName": "",
+      "email": "roman@gmail.com",
+      "password": "",
+      "id": 20
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 21
+    },
+    {
+      "userName": "",
+      "email": "roman@g",
+      "password": "",
+      "id": 22
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 23
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 24
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 25
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 26
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 27
+    },
+    {
+      "userName": "",
+      "email": "asasdffdfd",
+      "password": "",
+      "id": 28
+    },
+    {
+      "userName": "",
+      "email": "harshalghate3131@gmail.com",
+      "password": "",
+      "id": 29
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 30
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 31
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "harshal",
+      "id": 32
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "harshal",
+      "id": 33
+    },
+    {
+      "userName": "",
+      "email": "harshal3131@gmail.",
+      "password": "saaa",
+      "id": 34
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 35
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 36
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 37
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 38
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 39
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 40
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 41
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 42
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 43
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 44
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 45
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 46
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 47
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 48
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 49
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 50
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 51
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 52
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 53
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 54
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 55
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 56
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 57
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 58
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 59
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 60
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 61
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 62
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 63
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 64
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 65
+    },
+    {
+      "userName": "",
+      "email": "",
+      "password": "",
+      "id": 66
+    },
+    {
+      "userName": "harsh",
+      "email": "harshalghate3131@gmail.com",
+      "password": "Harshal@3131",
+      "id": 67
     }
   ]
 }

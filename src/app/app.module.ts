@@ -7,9 +7,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { BreathAnimationComponent } from './Components/breath-animation/breath-animation.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './Components/navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
     BreathAnimationComponent,
     
   ],
@@ -20,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     MaterialModule,
     HttpClientModule
   ],
+  exports:[NavbarComponent],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

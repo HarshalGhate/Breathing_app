@@ -1,7 +1,7 @@
 <div class="wrapper">
     <div class="container">
         <div class="logo-section">
-            <img src="assets/logo/breathly_logo1.png" alt="" >
+            <img src="assets/logo/breathly_logo1.png" alt="">
         </div>
         <div class="top-social-section">
             <div class="header">
@@ -10,12 +10,12 @@
             <div class="social-btn">
                 <!-- <button class="social-btn">Continue with Facebook</button> -->
                 <mat-icon>facebook</mat-icon>
-                <a >Continue with Facebook</a>
+                <a>Continue with Facebook</a>
             </div>
             <div class="social-btn">
                 <!-- <button class="social-btn">Continue with Google</button> -->
                 <mat-icon>Google</mat-icon>
-                <a >Continue with Google</a>
+                <a>Continue with Google</a>
             </div>
             <h4>OR LOGIN WITH EMAIL</h4>
         </div>
@@ -27,7 +27,11 @@
                     <mat-form-field appearance="outline">
                         <mat-label>Name</mat-label>
                         <input matInput placeholder="Name" formControlName="userName" required>
-                        <mat-icon matSuffix>done</mat-icon>
+                        <mat-icon matSuffix *ngIf="!Uname.valid">person</mat-icon>
+                        <mat-icon class="sucess-icon" *ngIf="Uname.valid" matSuffix>done</mat-icon>
+                        <mat-error *ngIf="Uname.invalid &&(Uname.touched || Uname.dirty)">
+                            <mat-error *ngIf="Uname.hasError('required')">Username is required</mat-error>
+                        </mat-error>
                     </mat-form-field>
                 </div>
                 <!-- email -->
@@ -36,8 +40,12 @@
                         <!-- [formControl]="email" -->
                         <mat-label>Email</mat-label>
                         <input matInput placeholder="pat@example.com" formControlName="email" required>
-                        <mat-icon matSuffix>done</mat-icon>
-                        <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+                        <mat-icon matSuffix *ngIf="!Email.valid">email</mat-icon>
+                        <mat-icon class="sucess-icon" *ngIf="Email.valid" matSuffix>done</mat-icon>
+                        <mat-error *ngIf="Email.invalid && (Email.touched || Email.dirty)">
+                            <mat-error *ngIf="Email.hasError('required')">Email is required</mat-error>
+                            <mat-error *ngIf="Email.hasError('invalidEmail')">Please enter the valid email</mat-error>
+                        </mat-error>
                     </mat-form-field>
                 </div>
                 <!-- password -->
@@ -49,12 +57,18 @@
                             [attr.aria-pressed]="hide">
                             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                         </button>
+                        <mat-error *ngIf="pass.invalid && (pass.touched || pass.dirty)">
+                            <mat-error *ngIf="pass.hasError('required')">Password is required</mat-error>
+                            <mat-error *ngIf="pass.hasError('passwordStrength')">{{pass.errors?.passwordStrength}}
+                            </mat-error>
+                        </mat-error>
                     </mat-form-field>
                 </div>
 
                 <div class="input-btn">
                     <button class="form-btn" (click)="signUp(signupForm.value)">GET STARTED</button>
                 </div>
+                <h4>Already SingUp? <a class="login-up-link" routerLink="/user/login">LOG IN</a></h4>
             </form>
         </div>
     </div>
