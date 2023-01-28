@@ -12,7 +12,7 @@ export class SignUpService {
   constructor(private http:HttpClient,private route:Router) { }
 
   post(data:signup){
-    return this.http.post(this.API_URL+`signup`,data)
+    return this.http.post(this.API_URL+`register`,data)
   }
 
   getLogin(data:signup){
