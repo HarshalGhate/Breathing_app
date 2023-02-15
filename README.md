@@ -19,7 +19,7 @@
 <img width="170" alt="image" src="https://user-images.githubusercontent.com/87290454/218991745-f461d711-77a1-44f4-8787-d39020ed447f.png">
 <img width="170" alt="image" src="https://user-images.githubusercontent.com/87290454/218991766-a82c0447-db86-4d8c-a88f-583e901ee99c.png">
 </div>
-![mobile (7)](https://user-images.githubusercontent.com/87290454/219006029-2e5f3d36-29b0-48aa-9561-0afce1d38aa8.png)
+![mobile (7)](https://user-images.githubusercontent.com/87290454/219006601-cc4ca4ed-725a-44ce-bca4-a8189a744118.png)
 
 
 
