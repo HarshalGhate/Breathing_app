@@ -1,4 +1,6 @@
+<h1 align="center">
 # BreatingApp
+ </h1> 
 <div align="center">
 <img width="170" alt="image" src="https://user-images.githubusercontent.com/87290454/218991167-bcb83180-150d-4b60-944c-c6a85982fbf8.png">
 <img width="170" src="https://user-images.githubusercontent.com/87290454/219004231-5b1bd20f-9219-43b7-a589-80a48d8a1256.png" alt="" /> 
