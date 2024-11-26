@@ -107,26 +107,7 @@
     }
   ],
   "Mixer": [
-    {
-      "id": 7,
-      "title": "Snow",
-      "audio": "assets/melodies_music/snow.mp3"
-    },
-    {
-      "id": 3,
-      "title": "Rain",
-      "audio": "assets/melodies_music/rain.mp3"
-    },
-    {
-      "id": 4,
-      "title": "Tornado",
-      "audio": "assets/melodies_music/tornado.mp3"
-    },
-    {
-      "id": 1,
-      "title": "Bird",
-      "audio": "assets/melodies_music/birds.mp3"
-    }
+    
   ],
   "signup": [
     {

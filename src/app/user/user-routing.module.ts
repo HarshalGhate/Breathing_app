@@ -9,6 +9,7 @@ const routes: Routes = [
   {path:"",redirectTo:"starter",pathMatch:"full"},
   {path:'starter',component:StarterComponent},
   {path:'signup',component:SignupComponent},
+  {path:"login",component:LoginComponent},
   {path:"login/:Access_Token",component:LoginComponent},
   {path:'welcome',component:WelcomeComponent}
 ];

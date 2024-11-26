@@ -7,7 +7,7 @@ app.use(express.urlencoded({extended:true}))
 const cors=require('cors');
 app.use(cors());
 require('./Config/config')
-const PORT=4000;
+const PORT=3000;
 
 app.listen(PORT,(req,res)=>{
     console.log(`Server Started ${PORT}`);

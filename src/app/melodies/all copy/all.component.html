@@ -1,0 +1,44 @@
+<app-melodies-nav></app-melodies-nav>
+<div class="wrapper">
+    <div class="container">
+        <div *ngFor="let item of MelodiesData">
+            <div class="circle" (click)="playAudio(audioOption,item)" appShadow>
+                {{item.title}}
+                <audio #audioOption src="{{item?.audio}}">
+                    <!--controls-->
+                    <!-- <source src='{{item?.audio}}' type="audio/mp3"> -->
+                </audio>
+            </div>
+        </div>
+    </div>
+    <div class="btn-section">
+        <!-- <button class="btn" mat-raised-button>Mixer</button> -->
+        <!-- <div class="btn">Mixer</div> -->
+
+        <mat-accordion mat-raised-button class="btn">
+
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Mixer
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+                <div *ngIf="MixerData.length>0">
+                    <!-- slider -->
+                    <div class="slider-item" *ngFor="let item of MixerData;index as i">
+                        {{item | json}}
+                        <div>
+                            Sound {{i+1}}
+                        </div>
+                        <mat-slider [ngClass]="{'red-slider': true}">
+                            <input matSliderThumb>
+                        </mat-slider>
+                    </div>
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>
+
+{{MelodiesData.values|json}}

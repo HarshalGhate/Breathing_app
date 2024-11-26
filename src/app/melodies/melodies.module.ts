@@ -10,6 +10,8 @@ import { CategoryComponent } from './category/category.component';
 import { ShadowDirective } from '../Directives/shadow.directive';
 import { MaterialModule } from '../material/material.module';
 import { MainNavModule } from '../main-nav/main-nav.module';
+import { FormsModule } from '@angular/forms';
+import { ActiveTrackDirective } from '../Directives/active-track.directive';
 
 
 @NgModule({
@@ -19,13 +21,15 @@ import { MainNavModule } from '../main-nav/main-nav.module';
     NatureComponent,
     MusicalComponent,
     CategoryComponent,
-    ShadowDirective
+    ShadowDirective,
+    ActiveTrackDirective,
   ],
   imports: [
     CommonModule,
     MelodiesRoutingModule,
     MaterialModule,
-    MainNavModule
+    MainNavModule,
+    FormsModule
   ]
 })
 export class MelodiesModule { }

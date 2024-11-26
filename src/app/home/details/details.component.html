@@ -9,14 +9,14 @@
 <div class="container">
     <div class="card">
         <div class="img-section">
-            <img src="{{Data?.Image}}" alt="">
+            <img src="{{Data[0]?.Image}}" alt="">
         </div>
         <div class="details-section">
             <div class="details-description">
-                <div class="title-section">{{Data?.title}}</div>
-                <div class="title-section">{{Data?.author}}</div>
+                <div class="title-section">{{Data[0]?.title}}</div>
+                <div class="title-section">{{Data[0]?.author}}</div>
             </div>
-            <div class="audio-section"><audio controls src="{{Data?.audio}}">
+            <div class="audio-section"><audio controls src="{{Data[0]?.audio}}">
                     <!-- <a href="/media/cc0-audio/t-rex-roar.mp3">
                         Download audio
                     </a> -->
