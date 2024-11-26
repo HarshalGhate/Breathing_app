@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "breathingapp-1"
-  }
+    "default": "breathingapp-1",
+    "yes": "meditationapp-3131"
+  },
+  "targets": {}
 }
